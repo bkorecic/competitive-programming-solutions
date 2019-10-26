@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 #define f first
 #define s second
- 
+
 using namespace std;
- 
+
 typedef long long ll;
- 
+
 int main(){
     ios_base::sync_with_stdio(0); cin.tie(0);
     int t; cin >> t;
@@ -13,26 +13,26 @@ int main(){
         int n, k, d; cin >> n >> k >> d;
         vector <int> nums(n);
         for(int i=0; i<n; i++)cin >> nums[i];
-        set <int> cnt;
+        int cur = 0;
         vector <int> freq(k+1, 0);
         for(int i=0; i<d; i++){
-            cnt.insert(nums[i]); 
+            if(freq[nums[i]] == 0) cur++;
             freq[nums[i]]++;
         }
-        int ans = cnt.size();
+        int ans = cur;
         //cout << ans << endl;
         for(int i=1; i+d-1<n; i++){
             //for(auto x : cnt) cout << x;
             //cout << endl;
-            cnt.insert(nums[i+d-1]);
+            if(freq[nums[i+d-1]] == 0) cur++;
             freq[nums[i+d-1]]++;
             freq[nums[i-1]]--;
-            if(freq[nums[i-1]] == 0) cnt.erase(nums[i-1]);
+            if(freq[nums[i-1]] == 0) cur--;
             //cout << "ins, erase " << i+d-1 << ' ' << i-1 << endl;
-            ans = min(ans, (int)cnt.size());
+            ans = min(ans, cur);
         }
         cout << ans << '\n';
-    } 
+    }
     return 0;
 }
 
