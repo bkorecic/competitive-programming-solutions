@@ -14,7 +14,8 @@ int main(){
         vector <int> nums(n);
         for(int i=0; i<n; i++)cin >> nums[i];
         int cur = 0;
-        vector <int> freq(k+1, 0);
+        map <int,int> freq; // CON VECTOR DA TLE!!
+        for(int i=0; i<n; i++) freq[nums[i]] = 0;
         for(int i=0; i<d; i++){
             if(freq[nums[i]] == 0) cur++;
             freq[nums[i]]++;
