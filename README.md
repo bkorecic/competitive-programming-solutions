@@ -10,7 +10,7 @@ My solutions to some competitive programming problems.
 * [Codeforces](https://codeforces.com/)
 * [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam)
 * [Live Archive](https://icpcarchive.ecs.baylor.edu/index.php)
-* [Online Judge](https://uva.onlinejudge.org/)
+* [Online Judge](https://onlinejudge.org/)
 
 # TODO
 
