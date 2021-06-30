@@ -34,3 +34,5 @@
 # i/o test files
 in.txt
 out.txt
+in
+out
