@@ -33,6 +33,10 @@
 
 # i/o test files
 in.txt
+in*.txt
 out.txt
 in
 out
+
+# other
+__pycache__/
