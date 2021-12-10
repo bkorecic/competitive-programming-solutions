@@ -1,0 +1,10 @@
+- determinar 1, 4, 7, 8 por cantidad de segmentos
+- 6 segmentos: 0 6 y 9
+- el 9 tiene todos los del 4
+- entre 0 y 6, el 0 tiene todos los del 1
+- el 6 es el que sobra de 6 segmentos
+- quedan 2, 3, 5
+- el 3 tiene contenido al 1
+- quedan 2, 5
+- 5: esta contenido en 6
+- 2: ultimo
